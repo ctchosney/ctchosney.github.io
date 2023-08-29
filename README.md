@@ -33,9 +33,9 @@
 
 ### "Measuring Factors for Museum Sector Income Inequality, 2016-2021" | May 2023
 
-[PDF]
+[PDF](assets/pdf/CHOSNEY - stats 2 final.pdf)
 
-[STATA Do File]
+[STATA Do File](assets/pdf/final_do_file.do)
 
 - Compiled, cleaned, and manipulated IPUMS USA ACS data in STATA for proper handling.
 - Ran statistical analyses within STATA, including linear and logistic regressions, to process datasets.
