@@ -42,3 +42,8 @@
 - Tested and validated models for accuracy of predictions in outcomes of interest.
 
 
+### "Gay Bar to Gei Bā, Shots to Shōchū: Comparing NYC and Tokyo’s Queer Nightlife Sites" | May 2023
+
+[PDF](assets/pdf/CHOSNEY - GEY BAR TO GEI BA FINAL PAPER.pdf)
+
+-bjkblb
