@@ -1,0 +1,681 @@
+---
+title: "Minority Representation in Museum Sector Employment, 2014-2020"
+author: "Craig Chosney"
+header-includes:
+    - \usepackage{setspace}\doublespacing
+output: pdf_document
+---
+
+<style type="text/css">
+
+h1.title {
+  font-size: 18px;
+  color: Black;
+  text-align: center;
+}
+h4.author { 
+  font-size: 18px;
+  color: Black;
+  text-align: center;
+}
+h4.date {
+  font-size: 12px;
+  color: Black;
+  text-align: center;
+}
+
+</style>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = TRUE,
+	warning = TRUE
+)
+
+library("openxlsx")
+require(data.table)
+require(ggplot2)
+library(ggpmisc)
+require(kableExtra)
+
+setwd("~/Desktop/QMSS/QUANT METHODS DOCS/FINAL PAPER/EEOC Data Sets")
+getwd()
+
+#eeoc1_2020_data <- read.xlsx("EEO1_2020_PUF.xlsx", sheet = 1, startRow = 1, colNames = TRUE,
+             #rowNames = FALSE, detectDates = FALSE, skipEmptyRows = TRUE,
+             #skipEmptyCols = TRUE, rows = NULL, cols = NULL, check.names = FALSE,
+             #namedRegion = NULL, na.strings = "NA", fillMergedCells = FALSE)
+
+#eeoc1_2020_data <- subset(eeoc1_2020_data, NAICS3 == "712")
+#eeoc1_2020_data$YEAR <- 2020
+
+#eeoc1_2019_data <- read.xlsx("EEO1_2019_PUF.xlsx", sheet = 1, startRow = 1, colNames = TRUE,
+                             #rowNames = FALSE, detectDates = FALSE, skipEmptyRows = TRUE,
+                             #skipEmptyCols = TRUE, rows = NULL, cols = NULL, check.names = FALSE,
+                             #namedRegion = NULL, na.strings = "NA", fillMergedCells = FALSE)
+
+#eeoc1_2019_data <- subset(eeoc1_2019_data, NAICS3 == "712")
+#eeoc1_2019_data$YEAR <- 2019
+
+#eeoc1_2018_data <- read.xlsx("EEO1_2018_PUF.xlsx", sheet = 1, startRow = 1, colNames = TRUE,
+                             ##rowNames = FALSE, detectDates = FALSE, skipEmptyRows = TRUE,
+                             #skipEmptyCols = TRUE, rows = NULL, cols = NULL, check.names = FALSE,
+                             #namedRegion = NULL, na.strings = "NA", fillMergedCells = FALSE)
+
+
+#eeoc1_2018_data <- subset(eeoc1_2018_data, NAICS3 == "712")
+#eeoc1_2018_data$YEAR <- 2018
+
+#eeoc1_2017_data <- read.xlsx("EEO1_2017_PUF.xlsx", sheet = 1, startRow = 1, colNames = TRUE,
+                             #rowNames = FALSE, detectDates = FALSE, skipEmptyRows = TRUE,
+                             #skipEmptyCols = TRUE, rows = NULL, cols = NULL, check.names = FALSE,
+                             #namedRegion = NULL, na.strings = "NA", fillMergedCells = FALSE)
+
+#eeoc1_2017_data <- subset(eeoc1_2017_data, NAICS3 == "712")
+#eeoc1_2017_data$YEAR <- 2017
+
+#eeoc1_2016_data <- read.xlsx("EEO1_2016_PUF.xlsx", sheet = 1, startRow = 1, colNames = TRUE,
+                             #rowNames = FALSE, detectDates = FALSE, skipEmptyRows = TRUE,
+                             #skipEmptyCols = TRUE, rows = NULL, cols = NULL, check.names = FALSE,
+                             #namedRegion = NULL, na.strings = "NA", fillMergedCells = FALSE)
+
+#eeoc1_2016_data <- subset(eeoc1_2016_data, NAICS3 == "712")
+#eeoc1_2016_data$YEAR <- 2016
+
+#eeoc1_2015_data <- read.xlsx("EEO1_2015_PUF.xlsx", sheet = 1, startRow = 1, colNames = TRUE,
+                             #rowNames = FALSE, detectDates = FALSE, skipEmptyRows = TRUE,
+                             #skipEmptyCols = TRUE, rows = NULL, cols = NULL, check.names = FALSE,
+                             #namedRegion = NULL, na.strings = "NA", fillMergedCells = FALSE)
+
+#eeoc1_2015_data <- subset(eeoc1_2015_data, NAICS3 == "712")
+#eeoc1_2015_data$YEAR <- 2015
+
+#eeoc1_2014_data <- read.xlsx("EEO1_2014_PUF.xlsx", sheet = 1, startRow = 1, colNames = TRUE,
+                             #rowNames = FALSE, detectDates = FALSE, skipEmptyRows = TRUE,
+                             #skipEmptyCols = TRUE, rows = NULL, cols = NULL, check.names = FALSE,
+                             #namedRegion = NULL, na.strings = "NA", fillMergedCells = FALSE)
+
+#eeoc1_2014_data <- subset(eeoc1_2014_data, NAICS3 == "712")
+#eeoc1_2014_data$YEAR <- 2014
+
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT10"] = "NHOPIT10"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT10"] = "TOMRT10"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT1"] = "NHOPIT1"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT2"] = "NHOPIT2"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT3"] = "NHOPIT3"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT4"] = "NHOPIT4"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT5"] = "NHOPIT5"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT6"] = "NHOPIT6"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT7"] = "NHOPIT7"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT8"] = "NHOPIT8"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT9"] = "NHOPIT9"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "nhopiT1_2"] = "NHOPIT1_2"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT1"] = "TOMRT1"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT2"] = "TOMRT2"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT3"] = "TOMRT3"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT4"] = "TOMRT4"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT5"] = "TOMRT5"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT6"] = "TOMRT6"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT7"] = "TOMRT7"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT8"] = "TOMRT8"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT9"] = "TOMRT9"
+#names(eeoc1_2019_data)[names(eeoc1_2019_data) == "tomrT1_2"] = "TOMRT1_2"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT10"] = "NHOPIT10"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT10"] = "TOMRT10"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT1"] = "NHOPIT1"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT2"] = "NHOPIT2"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT3"] = "NHOPIT3"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT4"] = "NHOPIT4"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT5"] = "NHOPIT5"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT6"] = "NHOPIT6"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT7"] = "NHOPIT7"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT8"] = "NHOPIT8"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT9"] = "NHOPIT9"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "nhopiT1_2"] = "NHOPIT1_2"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT1"] = "TOMRT1"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT2"] = "TOMRT2"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT3"] = "TOMRT3"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT4"] = "TOMRT4"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT5"] = "TOMRT5"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT6"] = "TOMRT6"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT7"] = "TOMRT7"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT8"] = "TOMRT8"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT9"] = "TOMRT9"
+#names(eeoc1_2020_data)[names(eeoc1_2020_data) == "tomrT1_2"] = "TOMRT1_2"
+
+#FULL_eeoc_data <- rbind(eeoc1_2014_data, eeoc1_2015_data, eeoc1_2016_data,eeoc1_2017_data, eeoc1_2018_data, eeoc1_2019_data, eeoc1_2020_data)
+
+#fwrite(FULL_eeoc_data, "FULL_eeoc_df.csv")
+
+FULL_eeoc_data <- fread("FULL_eeoc_df.csv", 
+                             stringsAsFactors = F, 
+                             data.table = F)
+                             #colClasses=FULL_eeoc_data[ ,1:10]="character")
+
+FULL_eeoc_data[FULL_eeoc_data == "*"] <- 0
+str(FULL_eeoc_data)
+
+q1_variables <- c("YEAR", "CBSA", "County", "Establishments", "TOTAL1", "TOTAL1_2", "MT1", "MT1_2", "FT1", "FT1_2")
+q1_df <- FULL_eeoc_data[q1_variables]
+numeric_var <- c("TOTAL1", "TOTAL1_2", "MT1", "MT1_2", "FT1", "FT1_2")
+q1_df[ ,numeric_var] <- apply(q1_df[ ,numeric_var], 2, function(x) as.numeric(as.character(x)))
+
+```
+
+<br>
+<br>
+
+<h3>**Introduction**</h3>
+
+In a contemporary cultural milieu that is seeing a great amount of disheartening racist, sexist, homophobic, transphobic, and anti-semitic rhetoric emerge as part of the political discourse, it is important to remember why diversity, equity, and inclusion matter.  Diversity, the presence of differences within a given setting, inclusion, the intentional effort to ensure that people of different identities can fully participate in all aspects of the work of an organization or community, and equity, an approach that ensures that everyone has access to the same opportunities, are necessary to ensure a future that is not dominated by a potentially harmful monoculture.
+
+The genesis for this project was a conversation I had with the HR Director of a NYC based cultural institution who told me about the EEO-1 dataset and expressed to me a desire for data and statistics on diversity, equity, and inclusion within their workplace and the museum industry as a whole.  Unfortunately, due to concerns of workplace confidentiality I was unable to use the EEO-1 data specific to this HR Director’s worksite, but it is the goal of this research project to elucidate what the available EEO-1 survey data reveals about diversity, equity, and inclusion within the museum and cultural institution sector both in the NYC area and nationwide, with the hopes of further expansion and collaboration upon the topic.
+
+<br>
+
+<h3>**Background**</h3>
+
+Although progress in workplace diversity, equity, and inclusion has been made since the Civil Rights Era of the 1960s, systemic inequality and discrimination in the workplace persists to this day.  As Rigel Hines writes, “Systemic discrimination and segregation in the labor market was the norm before the Civil Rights Movement” (2020).  In response to this workplace segregation and discrimination, particularly against women and non-whites, President John F. Kennedy made Affirmative Action in the labor market into federal law in 1961 with Executive Order 10925, and this order was followed by Title VII of the landmark Civil Rights Act of 1964, by which discrimination on the basis of race and gender in hiring, firing, and compensation was made illegal (Kurtulus 2016).  Despite a sixty year precedence, affirmative action remains contentious, with the Supreme Court hearing arguments as recently as October 2022 in a case that may jeopardize affirmative action for college and university admissions (Liptak 2022).  Furthermore, statistics released annually by the EEOC on workplace discrimination show 20,908 charges of race-based discrimination and 18,762 charges of sex-based discrimination filed in the year 2021 (eeoc.gov).
+
+Regardless of persistent workplace discrimination and changing political climates, the EEO-1Report remains a legacy of Title VII and a constant source of beneficial information.    Indeed, “the filing of the Employer Information Report (EEO-1), Standard Form 100, is required by law; it is not voluntary” (U.S. EEOC 2021).  The report, collected annually and recording data on workplace demographics, including race/ethnicity and sex categories, has been a boon to social scientists researching labor inequality.  Kurtulus and Tomaskovic-Devey have used the EEO-1 Data to study female participation in management positions across multiple industries (2012), and more recently Gaumer has used data from the EEO-1 Report to examine minority participation in the management teams of hospitals (2022).  Robinson writes that, “EEO-1 data are a powerful source of information for understanding organizational trends and processes that affect workplace sex and race segregation” (2005), and Skaggs and Kmec suggest in their paper on diversity among health care professionals that  “[EEO-1 data] findings are relevant to policy-makers concerned with laws governing the workplace” (2012).
+
+<br>
+
+<h3>**Research Question**</h4>
+
+Have we seen “progress” in terms of diversity, equity, and inclusion within the museum sector from the years 2014 to 2020 at the site of the NYC core-based statistical area (CBSA)?  How does this “progress” compare to any at the national level?
+
+<br>
+
+<h3>**Methods**</h3>
+
+Data for this study was collected from the EEO-1 Component Data Collection, “a mandatory annual data collection that requires all private sector employers with more than 100 employees, and federal contractors with 50 or more employees meeting certain criteria, to submit demographic workforce data, including data by race/ethnicity, sex and job categories” (U.S. EEOC 2021).
+
+Variables in the analysis include employee’s sex, race and ethnicity, and job category.  The two options which designate employee gender are Male and Female.  Race and Ethnicity information of employees was collected using the categories: American Indian or Alaska Native, Asian, Black or African American, Hispanic or Latino, Native Hawaiian or Other Pacific Islander, Two or more Races, and White.  “BIPOC” in this study refers to an aggregate of all race and ethnicity categories other than “White.”  The major job categories are Executive/Senior Level Officials and Managers, First/mid-Level Officials and Managers, Professionals, Technicians, Sales Workers, Administrative Support Workers, Craft Workers, Operatives, Laborers and Helpers, and Service Workers.  The museum sector was isolated within the dataset by using the North American Industry Classification System (NAICS) code “712” indicating “Museums, Historical Sites, and Similar Institutions.”
+
+My primary analytic technique for measuring “progress” using the EEO-1 dataset was to compare percentages of female employees, BIPOC employees, and female BIPOC employees in the museum sector longitudinally over time, using the year of the dataset as my independent variable and the percentages of female, BIPOC, and female BIPOC employees as my dependent variables.  To measure “progress” is a bit nebulous.  For the intent of this project, “progress” is meant to mean increased representation of females and BIPOCs in management and leadership roles as well as in the workplace as a whole, thus determined by a higher or increased percentage of employed individuals of these categoric variables over time.  The management and leadership roles are an aggregate of the “Executive/Senior Level Officials and Managers” and “First/Mid-Level Officials and Managers” job categories.  As a control, I decided to compare the percentages of minority representation in management positions to minority representation in the traditionally “unskilled” job categories where we might see traditionally high representation of female and BIPOC minorities.  I understand that “unskilled” is a misnomer, as these jobs may require a great-level of skill not traditionally recognized or compensated by our current economic system.  However, I have aggregated the “Laborers and Helpers” and “Service Workers” job categories to represent this “unskilled” control group, as these are the job categories deemed by the United States Census Bureau as requiring the “least average skill level, knowledge, and responsibility involved in each occupation within the job category” (2021).
+
+Finally, I have applied the test for Pearson’s correlation coefficient between the independent and dependent variables in our method.  This correlation test has been chosen in order to test the strength and direction of the linear relationship between the two continuous variables in our model.
+
+<br>
+
+<h3>**Results**</h3>
+
+The first set of plots (1 - 4) compare female and BIPOC job representation in the museum sector between management positions and our “unskilled” labor/service positions.  From the Pearson’s Correlation Test results it is revealed that only the relationship between BIPOC job representation in museum management positions and time is statistically significant.  This relationship shows a positive correlation coefficient of 0.16, meaning that there has been an increase in BIPOC managers from 2014 to 2020.  The relationships between female managers, female labor/service employees, and BIPOC labor/service employees and time are revealed to be insignificant by our correlation tests.
+
+\newpage
+<h3>**PLOT 1**</h3>
+<br>
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+
+##Q1
+q1_df$Tot_man_pop <- q1_df$TOTAL1 + q1_df$TOTAL1_2
+q1_df$MALE_man_pop <- q1_df$MT1 + q1_df$MT1_2
+q1_df$FEMALE_man_pop <- q1_df$FT1 + q1_df$FT1_2
+q1_df$Pct_F_man_pop <- round((q1_df$FEMALE_man_pop / q1_df$Tot_man_pop) * 100, digits = 2)
+
+q1_df_NYC <- subset(q1_df, CBSA == "New York-Newark-Jersey City, NY-NJ-PA")
+q1_df_NYC <- subset(q1_df_NYC, County == "")
+q1_df_NATIONAL <- subset(q1_df, Establishments > 250)
+q1_df_NYC$NYC_or_NAT <- "NYC CBSA"
+q1_df_NATIONAL$NYC_or_NAT <- "NATIONAL"
+q1_df_FINAL <- rbind(q1_df_NYC, q1_df_NATIONAL)
+
+q1_table <- q1_df_FINAL[ , c(1, 14, 15)]
+names(q1_table)[2:3] <- c("%", "SITE")
+row.names(q1_table) <- 1:nrow(q1_table)
+
+q1_plot <- ggplot(q1_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = Pct_F_man_pop)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="Female Job Representation",
+                                       subtitle = "Museum Management Positions",
+                                       y ="Percent",
+                                       x ="Year", fill="Site")
+q1_plot
+#print(q1_table)
+rows <- 1:(nrow(q1_table) %/% 2); part1 <- q1_table[rows,]; part2 <- q1_table[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+cortest_q1 <- cor.test(q1_df$YEAR, q1_df$Pct_F_man_pop)
+#cortest_q1
+cortest_q1 <- as.data.frame(cbind(cortest_q1$estimate,cortest_q1$p.value))
+rownames(cortest_q1)<-c("YEAR ~ PERCENT")
+cortest_q1$var <- row.names(cortest_q1)
+cortest_q1$Sig <- ifelse(cortest_q1$V2<0.05,"*","NS")
+cortest_q1$Sig <- ifelse(cortest_q1$V2<0.01,"**",cortest_q1$Sig)
+cortest_q1$Sig <- ifelse(cortest_q1$V2<0.001,"***",cortest_q1$Sig)
+cortest_q1<-cortest_q1[,c(3,1,4)]
+colnames(cortest_q1) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+
+kable(cortest_q1, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+```
+\newpage
+<h3>**PLOT 2**</h3>
+<br>
+
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+##Q2
+q2_variables <- c("YEAR", "CBSA", "County", "Establishments", "TOTAL1", "TOTAL1_2", "WHT1", "WHT1_2", "BLKT1", "BLKT1_2", "HISPT1", "HISPT1_2", "ASIANT1", "ASIANT1_2", "AIANT1", "AIANT1_2", "NHOPIT1", "NHOPIT1_2", "TOMRT1", "TOMRT1_2")
+q2_df <- FULL_eeoc_data[q2_variables]
+numeric_var <- c("TOTAL1", "TOTAL1_2", "WHT1", "WHT1_2", "BLKT1", "BLKT1_2", "HISPT1", "HISPT1_2", "ASIANT1", "ASIANT1_2", "AIANT1", "AIANT1_2", "NHOPIT1", "NHOPIT1_2", "TOMRT1", "TOMRT1_2")
+q2_df[ ,numeric_var] <- apply(q2_df[ ,numeric_var], 2, function(x) as.numeric(as.character(x)))
+
+q2_df$Tot_man_pop <- q2_df$TOTAL1 + q2_df$TOTAL1_2
+q2_df$Tot_POC_man_pop <- q2_df$BLKT1 + q2_df$BLKT1_2 + q2_df$HISPT1 + q2_df$HISPT1_2 + q2_df$ASIANT1 + q2_df$ASIANT1_2 + q2_df$AIANT1 + q2_df$AIANT1_2 + q2_df$NHOPIT1 + q2_df$NHOPIT1_2 + q2_df$TOMRT1 + q2_df$TOMRT1_2
+q2_df$Pct_POC_man_pop <- round((q2_df$Tot_POC_man_pop / q2_df$Tot_man_pop) * 100, digits = 2)
+
+q2_df_NYC <- subset(q2_df, CBSA == "New York-Newark-Jersey City, NY-NJ-PA")
+q2_df_NYC <- subset(q2_df_NYC, County == "")
+q2_df_NATIONAL <- subset(q2_df, Establishments > 250)
+q2_df_NYC$NYC_or_NAT <- "NYC CBSA"
+q2_df_NATIONAL$NYC_or_NAT <- "NATIONAL"
+q2_df_FINAL <- rbind(q2_df_NYC, q2_df_NATIONAL)
+
+q2_table <- q2_df_FINAL[ , c(1, 23, 24)]
+names(q2_table)[2:3] <- c("%", "SITE")
+row.names(q2_table) <- 1:nrow(q2_table)
+
+q2_plot <- ggplot(q2_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = Pct_POC_man_pop)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="BIPOC Job Representation",
+                                        subtitle = "Museum Management Positions",
+                                        y ="Percent",
+                                        x ="Year", fill="Site")
+q2_plot
+#print(q2_table)
+rows <- 1:(nrow(q2_table) %/% 2); part1 <- q2_table[rows,]; part2 <- q2_table[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+cortest_q2 <- cor.test(q2_df$YEAR, q2_df$Pct_POC_man_pop)
+#cortest_q2
+cortest_q2 <- as.data.frame(cbind(cortest_q2$estimate,cortest_q2$p.value))
+rownames(cortest_q2)<-c("YEAR ~ PERCENT")
+cortest_q2$var <- row.names(cortest_q2)
+cortest_q2$Sig <- ifelse(cortest_q2$V2<0.05,"*","NS")
+cortest_q2$Sig <- ifelse(cortest_q2$V2<0.01,"**",cortest_q2$Sig)
+cortest_q2$Sig <- ifelse(cortest_q2$V2<0.001,"***",cortest_q2$Sig)
+cortest_q2<-cortest_q2[,c(3,1,4)]
+colnames(cortest_q2) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+
+kable(cortest_q2, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+```
+
+\newpage
+<h3>**PLOT 3**</h3>
+<br>
+
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+##Q3
+q3_variables <- c("YEAR", "CBSA", "County", "Establishments", "TOTAL8", "TOTAL9", "MT8", "MT9", "FT8", "FT9")
+q3_df <- FULL_eeoc_data[q3_variables]
+numeric_var <- c("TOTAL8", "TOTAL9", "MT8", "MT9", "FT8", "FT9")
+q3_df[ ,numeric_var] <- apply(q3_df[ ,numeric_var], 2, function(x) as.numeric(as.character(x)))
+
+q3_df$Tot_unskilled_pop <- q3_df$TOTAL8 + q3_df$TOTAL9
+q3_df$MALE_unskilled_pop <- q3_df$MT8 + q3_df$MT9
+q3_df$FEMALE_unskilled_pop <- q3_df$FT8 + q3_df$FT9
+q3_df$Pct_F_unskilled_pop <- round((q3_df$FEMALE_unskilled_pop / q3_df$Tot_unskilled_pop) * 100, digits = 2)
+
+q3_df_NYC <- subset(q3_df, CBSA == "New York-Newark-Jersey City, NY-NJ-PA")
+q3_df_NYC <- subset(q3_df_NYC, County == "")
+q3_df_NATIONAL <- subset(q3_df, Establishments > 250)
+q3_df_NYC$NYC_or_NAT <- "NYC CBSA"
+q3_df_NATIONAL$NYC_or_NAT <- "NATIONAL"
+q3_df_FINAL <- rbind(q3_df_NYC, q3_df_NATIONAL)
+
+q3_table <- q3_df_FINAL[ , c(1, 14, 15)]
+names(q3_table)[2:3] <- c("%", "SITE")
+row.names(q3_table) <- 1:nrow(q3_table)
+
+q3_plot <- ggplot(q3_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = Pct_F_unskilled_pop)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="Female Job Representation",
+                                        subtitle = "Museum Labor/Service Positions",
+                                        y ="Percent",
+                                        x ="Year", fill="Site")
+q3_plot
+#print(q3_table)
+rows <- 1:(nrow(q3_table) %/% 2); part1 <- q3_table[rows,]; part2 <- q3_table[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+cortest_q3 <- cor.test(q3_df$YEAR, q3_df$Pct_F_unskilled_pop)
+#cortest_q3
+cortest_q3 <- as.data.frame(cbind(cortest_q3$estimate,cortest_q3$p.value))
+rownames(cortest_q3)<-c("YEAR ~ PERCENT")
+cortest_q3$var <- row.names(cortest_q3)
+cortest_q3$Sig <- ifelse(cortest_q3$V2<0.05,"*","NS")
+cortest_q3$Sig <- ifelse(cortest_q3$V2<0.01,"**",cortest_q3$Sig)
+cortest_q3$Sig <- ifelse(cortest_q3$V2<0.001,"***",cortest_q3$Sig)
+cortest_q3<-cortest_q3[,c(3,1,4)]
+colnames(cortest_q3) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+
+kable(cortest_q3, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+```
+
+\newpage
+<h3>**PLOT 4**</h3>
+<br>
+
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+##Q4
+q4_variables <- c("YEAR", "CBSA", "County", "Establishments", "TOTAL8", "TOTAL9", "WHT8", "WHT9", "BLKT8", "BLKT9", "HISPT8", "HISPT9", "ASIANT8", "ASIANT9", "AIANT8", "AIANT9", "NHOPIT8", "NHOPIT9", "TOMRT8", "TOMRT9")
+q4_df <- FULL_eeoc_data[q4_variables]
+numeric_var <- c("TOTAL8", "TOTAL9", "WHT8", "WHT9", "BLKT8", "BLKT9", "HISPT8", "HISPT9", "ASIANT8", "ASIANT9", "AIANT8", "AIANT9", "NHOPIT8", "NHOPIT9", "TOMRT8", "TOMRT9")
+q4_df[ ,numeric_var] <- apply(q4_df[ ,numeric_var], 2, function(x) as.numeric(as.character(x)))
+
+q4_df$Tot_unskilled_pop <- q4_df$TOTAL8 + q4_df$TOTAL9
+q4_df$Tot_POC_unskilled_pop <- q4_df$BLKT8 + q4_df$BLKT9 + q4_df$HISPT8 + q4_df$HISPT9 + q4_df$ASIANT8 + q4_df$ASIANT9 + q4_df$AIANT8 + q4_df$AIANT9 + q4_df$NHOPIT8 + q4_df$NHOPIT9 + q4_df$TOMRT8 + q4_df$TOMRT9
+q4_df$Pct_POC_unskilled_pop <- round((q4_df$Tot_POC_unskilled_pop / q4_df$Tot_unskilled_pop) * 100, digits = 2)
+
+q4_df_NYC <- subset(q4_df, CBSA == "New York-Newark-Jersey City, NY-NJ-PA")
+q4_df_NYC <- subset(q4_df_NYC, County == "")
+q4_df_NATIONAL <- subset(q4_df, Establishments > 250)
+q4_df_NYC$NYC_or_NAT <- "NYC CBSA"
+q4_df_NATIONAL$NYC_or_NAT <- "NATIONAL"
+q4_df_FINAL <- rbind(q4_df_NYC, q4_df_NATIONAL)
+
+q4_table <- q4_df_FINAL[ , c(1, 23, 24)]
+names(q4_table)[2:3] <- c("%", "SITE")
+row.names(q4_table) <- 1:nrow(q4_table)
+
+q4_plot <- ggplot(q4_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = Pct_POC_unskilled_pop)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="PLOT 4: BIPOC Job Representation",
+                                        subtitle = "Museum Labor/Service Positions",
+                                        y ="Percent",
+                                        x ="Year", fill="Site")
+q4_plot
+#print(q4_table)
+rows <- 1:(nrow(q4_table) %/% 2); part1 <- q4_table[rows,]; part2 <- q4_table[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+cortest_q4 <- cor.test(q4_df$YEAR, q4_df$Pct_POC_unskilled_pop)
+#cortest_q4
+cortest_q4 <- as.data.frame(cbind(cortest_q4$estimate,cortest_q4$p.value))
+rownames(cortest_q4)<-c("YEAR ~ PERCENT")
+cortest_q4$var <- row.names(cortest_q4)
+cortest_q4$Sig <- ifelse(cortest_q4$V2<0.05,"*","NS")
+cortest_q4$Sig <- ifelse(cortest_q4$V2<0.01,"**",cortest_q4$Sig)
+cortest_q4$Sig <- ifelse(cortest_q4$V2<0.001,"***",cortest_q4$Sig)
+cortest_q4<-cortest_q4[,c(3,1,4)]
+colnames(cortest_q4) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+
+kable(cortest_q4, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+```
+
+
+\newpage
+<h3>**PLOT 5**</h3>
+<br>
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+
+##Q5
+q5_variables <- c("YEAR", "CBSA", "County", "Establishments", "FT1", "FT1_2", "FT8", "FT9", 
+                   "WHF1", "WHF1_2","WHF8", "WHF9", "BLKF1", "BLKF1_2", "BLKF8", "BLKF9",
+                   "HISPF1", "HISPF1_2","HISPF8", "HISPF9", "ASIANF1", "ASIANF1_2", "ASIANF8", "ASIANF9",
+                   "AIANF1", "AIANF1_2","AIANF8", "AIANF9", "NHOPIF1", "NHOPIF1_2", "NHOPIF8", "NHOPIF9",
+                   "TOMRF1", "TOMRF1_2","TOMRF8", "TOMRF9")
+q5_df <- FULL_eeoc_data[q5_variables]
+numeric_var <- c("FT1", "FT1_2", "FT8", "FT9", 
+                 "WHF1", "WHF1_2","WHF8", "WHF9", "BLKF1", "BLKF1_2", "BLKF8", "BLKF9",
+                 "HISPF1", "HISPF1_2","HISPF8", "HISPF9", "ASIANF1", "ASIANF1_2", "ASIANF8", "ASIANF9",
+                 "AIANF1", "AIANF1_2","AIANF8", "AIANF9", "NHOPIF1", "NHOPIF1_2", "NHOPIF8", "NHOPIF9",
+                 "TOMRF1", "TOMRF1_2","TOMRF8", "TOMRF9")
+q5_df[ ,numeric_var] <- apply(q5_df[ ,numeric_var], 2, function(x) as.numeric(as.character(x)))
+
+q5_df$Tot_man_pop <- q5_df$FT1 + q5_df$FT1_2
+q5_df$Tot_FPOC_man_pop <- q5_df$BLKF1 + q5_df$BLKF1_2 + q5_df$HISPF1 + q5_df$HISPF1_2 + q5_df$ASIANF1 + q5_df$ASIANF1_2 + q5_df$AIANF1 + q5_df$AIANF1_2 + q5_df$NHOPIF1 + q5_df$NHOPIF1_2 + q5_df$TOMRF1 + q5_df$TOMRF1_2
+q5_df$Pct_FPOC_man_pop <- round((q5_df$Tot_FPOC_man_pop / q5_df$Tot_man_pop) * 100, digits = 2)
+
+q5_df$Tot_unskilled_pop <- q5_df$FT8 + q5_df$FT9
+q5_df$Tot_FPOC_unskilled_pop <- q5_df$BLKF8 + q5_df$BLKF9 + q5_df$HISPF8 + q5_df$HISPF9 + q5_df$ASIANF8 + q5_df$ASIANF9 + q5_df$AIANF8 + q5_df$AIANF9 + q5_df$NHOPIF8 + q5_df$NHOPIF9 + q5_df$TOMRF8 + q5_df$TOMRF9
+q5_df$Pct_FPOC_unskilled_pop <- round((q5_df$Tot_FPOC_unskilled_pop / q5_df$Tot_unskilled_pop) * 100, digits = 2)
+
+q5_df_NYC <- subset(q5_df, CBSA == "New York-Newark-Jersey City, NY-NJ-PA")
+q5_df_NYC <- subset(q5_df_NYC, County == "")
+q5_df_NATIONAL <- subset(q5_df, Establishments > 250)
+q5_df_NYC$NYC_or_NAT <- "NYC CBSA"
+q5_df_NATIONAL$NYC_or_NAT <- "NATIONAL"
+q5_df_FINAL <- rbind(q5_df_NYC, q5_df_NATIONAL)
+
+q5_table <- q5_df_FINAL[ , c(1, 39, 42, 43)]
+names(q5_table)[2:4] <- c("% MANAGEMENT", "% LABOR/SERVICE", "SITE")
+row.names(q5_table) <- 1:nrow(q5_table)
+q5_table_MAN <-q5_table[ , c(1, 2, 4)]
+q5_table_UNS <-q5_table[ , c(1, 3, 4)]
+
+q5_plot_MAN <- ggplot(q5_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = Pct_FPOC_man_pop)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="Female BIPOC Job Representation",
+                                        subtitle = "Museum Managment Positions",
+                                        y ="Percent",
+                                        x ="Year", fill="Site")
+q5_plot_UNS <- ggplot(q5_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = Pct_FPOC_unskilled_pop)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="Female BIPOC Job Representation",
+                                        subtitle = "Museum Labor/Service Positions",
+                                        y ="Percent",
+                                        x ="Year", fill="Site")
+q5_plot_MAN
+#print(q5_table)
+rows <- 1:(nrow(q5_table_MAN) %/% 2); part1 <- q5_table_MAN[rows,]; part2 <- q5_table_MAN[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+cortest_q5_MAN <- cor.test(q5_df$YEAR, q5_df$Pct_FPOC_man_pop)
+#cortest_q5_MAN
+cortest_q5_MAN <- as.data.frame(cbind(cortest_q5_MAN$estimate,cortest_q5_MAN$p.value))
+rownames(cortest_q5_MAN)<-c("YEAR ~ PERCENT")
+cortest_q5_MAN$var <- row.names(cortest_q5_MAN)
+cortest_q5_MAN$Sig <- ifelse(cortest_q5_MAN$V2<0.05,"*","NS")
+cortest_q5_MAN$Sig <- ifelse(cortest_q5_MAN$V2<0.01,"**",cortest_q5_MAN$Sig)
+cortest_q5_MAN$Sig <- ifelse(cortest_q5_MAN$V2<0.001,"***",cortest_q5_MAN$Sig)
+cortest_q5_MAN<-cortest_q5_MAN[,c(3,1,4)]
+colnames(cortest_q5_MAN) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+
+kable(cortest_q5_MAN, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+cortest_q5_UNS <- cor.test(q5_df$YEAR, q5_df$Pct_FPOC_unskilled_pop)
+#cortest_q5_UNS
+cortest_q5_UNS <- as.data.frame(cbind(cortest_q5_UNS$estimate,cortest_q5_UNS$p.value))
+rownames(cortest_q5_UNS)<-c("YEAR ~ PERCENT")
+cortest_q5_UNS$var <- row.names(cortest_q5_UNS)
+cortest_q5_UNS$Sig <- ifelse(cortest_q5_UNS$V2<0.05,"*","NS")
+cortest_q5_UNS$Sig <- ifelse(cortest_q5_UNS$V2<0.01,"**",cortest_q5_UNS$Sig)
+cortest_q5_UNS$Sig <- ifelse(cortest_q5_UNS$V2<0.001,"***",cortest_q5_UNS$Sig)
+cortest_q5_UNS<-cortest_q5_UNS[,c(3,1,4)]
+colnames(cortest_q5_UNS) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+```
+
+\newpage
+<h3>**PLOT 6**</h3>
+<br>
+
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+
+q5_plot_UNS
+rows <- 1:(nrow(q5_table_UNS) %/% 2); part1 <- q5_table_UNS[rows,]; part2 <- q5_table_UNS[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+kable(cortest_q5_UNS, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+```
+
+<br>
+
+\newpage
+<h3>**PLOT 7**</h3>
+<br>
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+
+##Q6
+q6_variables <- c("YEAR", "CBSA", "County", "Establishments", "TOTAL10", "MT10", "FT10",
+                 "WHT10", "WHF10", "BLKT10", "BLKF10",
+                 "HISPT10", "HISPF10","ASIANT10", "ASIANF10",
+                 "AIANT10", "AIANF10","NHOPIT10", "NHOPIF10",
+                 "TOMRT10", "TOMRF10")
+q6_df <- FULL_eeoc_data[q6_variables]
+numeric_var <- c("TOTAL10", "MT10", "FT10",
+                 "WHT10", "WHF10", "BLKT10", "BLKF10",
+                 "HISPT10", "HISPF10","ASIANT10", "ASIANF10",
+                 "AIANT10", "AIANF10","NHOPIT10", "NHOPIF10",
+                 "TOMRT10", "TOMRF10")
+q6_df[ ,numeric_var] <- apply(q6_df[ ,numeric_var], 2, function(x) as.numeric(as.character(x)))
+
+q6_df$pct_FEMALE <- round((q6_df$FT10 / q6_df$TOTAL10) * 100, digits = 2)
+q6_df$Tot_POC_pop <- q6_df$BLKT10 + q6_df$HISPT10 + q6_df$ASIANT10 + q6_df$AIANT10 + q6_df$NHOPIT10 + q6_df$TOMRT10
+q6_df$pct_POC_pop <- round((q6_df$Tot_POC_pop / q6_df$TOTAL10) * 100, digits = 2)
+q6_df$Tot_FPOC_pop <- q6_df$BLKF10 + q6_df$HISPF10 + q6_df$ASIANF10 + q6_df$AIANF10 + q6_df$NHOPIF10 + q6_df$TOMRF10
+q6_df$pct_FPOC_pop <- round((q6_df$Tot_FPOC_pop / q6_df$TOTAL10) * 100, digits = 2)
+
+q6_df_NYC <- subset(q6_df, CBSA == "New York-Newark-Jersey City, NY-NJ-PA")
+q6_df_NYC <- subset(q6_df_NYC, County == "")
+q6_df_NATIONAL <- subset(q6_df, Establishments > 250)
+q6_df_NYC$NYC_or_NAT <- "NYC CBSA"
+q6_df_NATIONAL$NYC_or_NAT <- "NATIONAL"
+q6_df_FINAL <- rbind(q6_df_NYC, q6_df_NATIONAL)
+
+q6_table <- q6_df_FINAL[ , c(1, 22, 24, 26, 27)]
+names(q6_table)[2:5] <- c("% FEMALE", "% BIPOC", "% FEMALE BIPOC", "SITE")
+row.names(q6_table) <- 1:nrow(q6_table)
+q6_table_F <-q6_table[ , c(1, 2, 5)]
+q6_table_POC <-q6_table[ , c(1, 3, 5)]
+q6_table_FPOC <-q6_table[ , c(1, 4, 5)]
+
+q6_plot_F <- ggplot(q6_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = pct_FEMALE)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="Female Job Representation",
+                                        subtitle = "Museum Positions (ALL)",
+                                        y ="Percent",
+                                        x ="Year", fill="Site")
+q6_plot_POC <- ggplot(q6_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = pct_POC_pop)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="BIPOC Job Representation",
+                                        subtitle = "Museum Positions (ALL)",
+                                        y ="Percent",
+                                        x ="Year", fill="Site")
+q6_plot_FPOC <- ggplot(q6_df_FINAL, aes(fill = NYC_or_NAT, x = YEAR, y = pct_FPOC_pop)) + geom_bar(position="dodge", stat="identity") + 
+  coord_cartesian(ylim=c(0,100)) + labs(title ="Female BIPOC Job Representation",
+                                        subtitle = "Museum Positions (ALL)",
+                                        y ="Percent",
+                                        x ="Year", fill="Site")
+
+
+q6_plot_F
+cortest_q6_F <- cor.test(q6_df$YEAR, q6_df$pct_FEMALE)
+#cortest_q6_F
+cortest_q6_F <- as.data.frame(cbind(cortest_q6_F$estimate,cortest_q6_F$p.value))
+rownames(cortest_q6_F)<-c("YEAR ~ PERCENT")
+cortest_q6_F$var <- row.names(cortest_q6_F)
+cortest_q6_F$Sig <- ifelse(cortest_q6_F$V2<0.05,"*","NS")
+cortest_q6_F$Sig <- ifelse(cortest_q6_F$V2<0.01,"**",cortest_q6_F$Sig)
+cortest_q6_F$Sig <- ifelse(cortest_q6_F$V2<0.001,"***",cortest_q6_F$Sig)
+cortest_q6_F<-cortest_q6_F[,c(3,1,4)]
+colnames(cortest_q6_F) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+
+rows <- 1:(nrow(q6_table_F) %/% 2); part1 <- q6_table_F[rows,]; part2 <- q6_table_F[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+kable(cortest_q6_F, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+```
+
+\newpage
+<h3>**PLOT 8**</h3>
+<br>
+
+
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+q6_plot_POC
+cortest_q6_POC <- cor.test(q6_df$YEAR, q6_df$pct_POC_pop)
+#cortest_q6_POC
+cortest_q6_POC <- as.data.frame(cbind(cortest_q6_POC$estimate,cortest_q6_POC$p.value))
+rownames(cortest_q6_POC)<-c("YEAR ~ PERCENT")
+cortest_q6_POC$var <- row.names(cortest_q6_POC)
+cortest_q6_POC$Sig <- ifelse(cortest_q6_POC$V2<0.05,"*","NS")
+cortest_q6_POC$Sig <- ifelse(cortest_q6_POC$V2<0.01,"**",cortest_q6_POC$Sig)
+cortest_q6_POC$Sig <- ifelse(cortest_q6_POC$V2<0.001,"***",cortest_q6_POC$Sig)
+cortest_q6_POC<-cortest_q6_POC[,c(3,1,4)]
+colnames(cortest_q6_POC) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+
+rows <- 1:(nrow(q6_table_POC) %/% 2); part1 <- q6_table_POC[rows,]; part2 <- q6_table_POC[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+kable(cortest_q6_POC, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+```
+
+\newpage
+<h3>**PLOT 9**</h3>
+<br>
+
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
+q6_plot_FPOC
+cortest_q6_FPOC <- cor.test(q6_df$YEAR, q6_df$pct_FPOC_pop)
+#cortest_q6_FPOC
+cortest_q6_FPOC <- as.data.frame(cbind(cortest_q6_FPOC$estimate,cortest_q6_FPOC$p.value))
+rownames(cortest_q6_FPOC)<-c("YEAR ~ PERCENT")
+cortest_q6_FPOC$var <- row.names(cortest_q6_FPOC)
+cortest_q6_FPOC$Sig <- ifelse(cortest_q6_FPOC$V2<0.05,"*","NS")
+cortest_q6_FPOC$Sig <- ifelse(cortest_q6_FPOC$V2<0.01,"**",cortest_q6_FPOC$Sig)
+cortest_q6_FPOC$Sig <- ifelse(cortest_q6_FPOC$V2<0.001,"***",cortest_q6_FPOC$Sig)
+cortest_q6_FPOC<-cortest_q6_FPOC[,c(3,1,4)]
+colnames(cortest_q6_FPOC) <- c("VARIABLES","CORRELATION","SIGNIFICANCE")
+
+rows <- 1:(nrow(q6_table_FPOC) %/% 2); part1 <- q6_table_FPOC[rows,]; part2 <- q6_table_FPOC[-rows,]
+knitr::kable(list(part1, part2), row.names = FALSE, digits=2)%>%
+  kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+kable(cortest_q6_FPOC, row.names = FALSE, caption = "PEARSON'S CORRELATION TEST", digits=2)%>%
+      kable_styling(full_width=F, position="left", latex_options = "HOLD_position")
+
+```
+
+\newpage
+<br>
+
+The next two plots (5-6) compare female BIPOC job representation in the museum sector for both management and for our “unskilled” labor/service positions.  Both of these plots show a statistically significant relationship between our percentage variable and the independent variable of time.  It is particularly revealing that the female BIPOCs in management plot has a positive correlation coefficient, and that the female BIPOCs in labor/service positions has a negative correlation coefficient, indicating that the percentage of female BIPOCs in management has been increasing over time while the percentage of female BIPOCs in labor/service positions has been decreasing over time.
+
+<br>
+
+Finally, our last three plots (7-9) show female, BIPOC, and female BIPOC job representation in all job categories within the museum sector over time.  All three Pearson’s Correlation Tests for these plots reveal significant positive relationships, indicating increased hiring and participation of female and BIPOC minorities within the museum sector workforce from 2014 to 2020.  
+
+<br>
+<h3>**Conclusion**</h3>
+Looking at our results, we do observe that “progress,” or an increase in female, BIPOC, and female BIPOC representation in museum management roles, has occurred from the year 2014 to 2020.  There has also been an increase in this minority representation in all museum positions over the same time period.  Secondly, a strong statistical correlation exists between BIPOC job representation in museum management positions and our independent variable of time, lending more validity to our observation of “progress” in terms of diversity, equity, and inclusion at the museum worksite.  The increase in female BIPOC job representation in management is particularly elucidating of our concept of “progress” when compared to our control variable, which shows a decrease in female BIPOC job representation in labor/service positions within the same industry sector.  The coupling of this increase in management roles for female BIPOCS with a decrease of female BIPOC representation in labor/service roles may correlate to the adoption of diversity, inclusion, and equity practices within fields such as education, hiring, or training.  Lastly, when we compare our results of “progress” at the NYC CBSA to the national level we see similar trends, indicating that “progress” at the national level mirrors the “progress” seen at the NYC CBSA.
+
+It is heartening to see the measurable results of “progress” in terms of increased employment for female and BIPOC minorities within the museum sector.  The work of “progress” is never done, and it is my hope that projects like this will be a guiding light to show that programs such as Affirmative Action and diversity, equity, and inclusion initiatives have meaningful impacts on the workplace.  To quantify “progress” and reveal that it matters may increase meaningful support for such programs in terms of fiscal or public policy.
+<br>
+\newpage
+
+<h3>**Bibliography**</h3>
+
+Executive Office of the President, Office of Management and Budget. (2017). “North American Industry Classification System.”
+
+Gaumer, Coulam, R., & Desilets, R. (2022). “Minority Participation of the Senior Management of Private U.S. Hospitals.” *Medical Care Research and Review*, 79(3), 435–447. 
+
+Graham, Belliveau, M. A., & Hotchkiss, J. L. (2017). “The View at the Top or Signing at the Bottom? Workplace Diversity Responsibility and Women’s Representation in Management.” *Industrial & Labor Relations Review*, 70(1), 223–258. 
+
+Kurtulus. (2016). “The Impact of Affirmative Action on the Employment of Minorities and Women: A Longitudinal Analysis Using Three Decades of EEO-1 Filings.” *Journal of Policy Analysis and Management*, 35(1), 34–66.
+
+Kurtulus, & Tomaskovic-Devey, D. (2012). “Do Female Top Managers Help Women to Advance? A Panel Study Using EEO-1 Records.” *The Annals of the American Academy of Political and Social Science*, 639(1), 173–197.
+
+Liptak, Adam. (Oct 31, 2022). “Supreme Court Seems Ready to Throw Out Race-Based College Admissions.” *The New York Times*.
+
+NORC & The Equal Employment Opportunity Commission. (2020). “Public Use Data File: User Guide.”
+
+Rigel Hines. (2020). “Demographic Group Representation in Occupational Categories: A Longitudinal Study of EEO-1 Data.” *Labor Studies Journal*, 45(4), 331–350.
+
+Robinson, Taylor, T., Tomaskovic-Devey, D., Zimmer, C., & Irvin, M. W. (2005). “Studying Race or Ethnic and Sex Segregation at the Establishment Level: Methodological Issues and Substantive Opportunities Using EEO-1 Reports.” *Work and Occupations*, 32(1), 5–38. 
+
+Skaggs, & Kmec, J. A. (2012). “Checking the Pulse of Diversity among Health Care Professionals: An Analysis of West Coast Hospitals.” *The Annals of the American Academy of Political and Social Science*, 639(1), 236–257.
+
+United States Census Bureau. (2012). “2010 Census Summary File 1— Technical Documentation.”
+
+U.S. Equal Employment Opportunity Commission. (2021). “EEO-1 Component 1 Data Collection Instruction Booklet.
