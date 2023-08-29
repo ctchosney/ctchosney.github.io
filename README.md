@@ -22,7 +22,7 @@
 ## Projects
 ### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
 [PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf)
-[R Markdown Code](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
+![R Markdown Code](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
 
 - Compiled, cleaned, and manipulated EEO-1 survey data in R for proper handling.
 - Developed polished visualizations to share results of data analyses.
