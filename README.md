@@ -2,10 +2,10 @@
 
 #### Technical Skills: 
 
-## Education
-- Ph.D., Physics | The University of Texas at Dallas (_May 2022_)								       		
-- M.S., Physics	| The University of Texas at Dallas (_December 2019_)	 			        		
-- B.S., Physics | The University of Texas at Dallas (_May 2017_)
+## Education							       		
+- M.S., Quantitative Methods in the Social Sciences	| CUNY Graduate Center (_Expected December 2024_)
+- A.A.S., Fashion Marketing and Communication | Parsons School of Design (_December 2007_)
+- B.A., Sociology/Anthropology/Geology | Denison University (_May 2005_)
 
 ## Work Experience
 **Data Scientist @ Toyota Financial Services (_June 2022 - Present_)**
