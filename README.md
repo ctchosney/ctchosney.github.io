@@ -1,4 +1,5 @@
 # Data Analyst
+## [Resume PDF](assets/pdf/Chosney Resume.pdf)
 
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
 
@@ -14,9 +15,9 @@
 ## Work Experience
 **Freemans Restaurant - Server Captain and Shift Manager**
 (_August 2012 - Present_)
-- Schedule reservations and manage seating arrangements simultaneously in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor
+- Schedule reservations and manage seating arrangements simultaneously in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor.
 - Handle customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service
-- Deliver in-depth training to workers in customer-facing roles to promote strong team performance
+- Deliver in-depth training to workers in customer-facing roles to promote strong team performance.
 
 
 ## Projects
@@ -30,23 +31,14 @@
 - Wrote, formatted, and output report using R Markdown.
 
 
-### Decoding Physical and Cognitive Impacts of Particulate Matter Concentrations at Ultra-Fine Scales
-[Publication](https://www.mdpi.com/1424-8220/22/11/4240)
+### "Measuring Factors for Museum Sector Income Inequality, 2016-2021" | May 2023
 
-Used **Matlab** to train over 100 machine learning models which estimated particulate matter concentrations based on a suite of over 300 biometric variables. We found biometric variables can be used to accurately estimate particulate matter concentrations at ultra-fine spatial scales with high fidelity (r2 = 0.91) and that smaller particles are better estimated than larger ones. Inferring environmental conditions solely from biometric measurements allows us to disentangle key interactions between the environment and the body.
+[PDF]
 
-![Bike Study](/assets/img/bike_study.jpeg)
+[STATA Do File]
 
-## Talks & Lectures
-- Causality: The new science of an old question - GSP Seminar, Fall 2021
-- Guest Lecture: Dimensionality Reduction - Big Data and Machine Learning for Scientific Discovery (PHYS 5336), Spring 2021
-- Guest Lecture: Fourier and Wavelet Transforms - Scientific Computing (PHYS 5315), Fall 2020
-- A Brief Introduction to Optimization - GSP Seminar, Fall 2019
-- Weeks of Welcome Poster Competition - UTD, Fall 2019
-- A Brief Introduction to Networks - GSP Seminar, Spring 2019
-
-- [Data Science YouTube](https://www.youtube.com/channel/UCa9gErQ9AE5jT2DZLjXBIdA)
+- Compiled, cleaned, and manipulated IPUMS USA ACS data in STATA for proper handling.
+- Ran statistical analyses within STATA, including linear and logistic regressions, to process datasets.
+- Tested and validated models for accuracy of predictions in outcomes of interest.
 
 
-
-- [Data Science Blog](https://medium.com/@shawhin)
