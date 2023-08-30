@@ -13,6 +13,7 @@
 - Google Data Analytics | Coursera | _August 2023_
 - Computer Science | NYU Tandon School of Engineering | _May 2022_
 
+---
 
 ## Projects
 ### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
@@ -42,9 +43,10 @@
 
 - A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
 
+---
 
 ## Work Experience
-**Freemans Restaurant - Server Captain and Shift Manager**
+**Freemans Restaurant - Server Captain and Shift Manager**\
 _August 2012 - Present_
 - Schedule reservations and manage seating arrangements simultaneously in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor.
 - Handle customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service
