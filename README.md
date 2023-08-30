@@ -26,7 +26,7 @@
 ### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
 [PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf)
 
-[R Markdown Code](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
+[R Markdown](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
 
 - Compiled, cleaned, and manipulated EEO-1 survey data in R for proper handling.
 - Developed polished visualizations to share results of data analyses.
@@ -37,7 +37,7 @@
 
 [PDF](assets/pdf/CHOSNEY - stats 2 final.pdf)
 
-[STATA Do File](assets/pdf/final_do_file.do)
+[STATA](assets/pdf/final_do_file.do)
 
 - Compiled, cleaned, and manipulated IPUMS USA ACS data in STATA for proper handling.
 - Ran statistical analyses within STATA, including linear and logistic regressions, to process datasets.
@@ -48,12 +48,12 @@
 
 [PDF](assets/pdf/CHOSNEY - GEY BAR TO GEI BA FINAL PAPER.pdf)
 
--INSERT TEXT
+- Mapping and GIS data is used to compare sites of queer nightlife in NYC and Tokyo in terms of quantity, location, and density. Analysis of these comparisons reveal that differing historical influences and sociocultural attitudes towards homosexuality between New York City and Tokyo have resulted in different urban layouts of these city’s queer nightlife sites.
 
 ### "A Restaurant Queuing Model to Inform Staffing" | July 2023
 
 [Presentation PDF](assets/pdf/Chosney Final Slide Deck.pdf)
 
-[Code Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
+[Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
 
--INSERT TEXT
+- A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business to return a "cover count" for a typical five hour lunch, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
