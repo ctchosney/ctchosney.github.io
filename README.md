@@ -1,4 +1,5 @@
 # Data Analyst
+
 ## [Resume PDF](assets/pdf/Chosney Resume.pdf)
 
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
