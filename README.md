@@ -1,7 +1,6 @@
 # Data Analyst
 ### Email: ctchosney@gmail.com
-### [Resume PDF](assets/pdf/Chosney Resume.pdf)
-### [LinkedIn](http://www.linkedin.com/in/ctchosney)
+### [Resume PDF](assets/pdf/Chosney Resume.pdf) | [LinkedIn](http://www.linkedin.com/in/ctchosney)
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
 
 
@@ -17,25 +16,21 @@
 
 ## Projects
 ### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
-[PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf)
-
-[R Markdown](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
+[PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf) | [R Markdown](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
 
 - EEO-1 Component Collection data is analyzed using RStudio to answer the question of whether we have seen “progress” in terms of diversity, equity, and inclusion within the museum sector from the years 2014 to 2020 at the site of the NYC Core Based Statistical Area and how this “progress” compares to any at the national level.
 
 
 ### "Measuring Factors for Museum Sector Income Inequality, 2016-2021" | May 2023
 
-[PDF](assets/pdf/CHOSNEY - stats 2 final.pdf)
-
-[STATA](assets/pdf/final_do_file.do)
+[PDF](assets/pdf/CHOSNEY - stats 2 final.pdf) | [STATA](assets/pdf/final_do_file.do)
 
 - U.S. Census microdata is analyzed in STATA to determine which of the factors of age, sex, race, and managerial role contribute to income inequality for individuals employed in the museum and cultural institution job sector of the New York, Newark, and Jersey City Core Based Statistical Area.
 
 
 ### "Gay Bar to Gei Bā, Shots to Shōchū: Comparing NYC and Tokyo’s Queer Nightlife Sites" | May 2023
 
-[PDF](assets/pdf/CHOSNEY - GEY BAR TO GEI BA FINAL PAPER.pdf)
+[PDF](assets/pdf/CHOSNEY - GEY BAR TO GEI BA FINAL PAPER.pdf) |
 
 - Mapping and GIS data is used to compare sites of queer nightlife in NYC and Tokyo in terms of quantity, location, and density. Analysis of these comparisons reveal that differing historical influences and sociocultural attitudes towards homosexuality between New York City and Tokyo have resulted in different urban layouts of these city’s queer nightlife sites.
 
