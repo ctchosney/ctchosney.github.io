@@ -14,14 +14,6 @@
 - Google Data Analytics | Coursera (_August 2023_)
 - Computer Science | NYU Tandon School of Engineering (_May 2022_)
 
-## Work Experience
-**Freemans Restaurant - Server Captain and Shift Manager**
-(_August 2012 - Present_)
-- Schedule reservations and manage seating arrangements simultaneously in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor.
-- Handle customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service
-- Deliver in-depth training to workers in customer-facing roles to promote strong team performance.
-
-
 ## Projects
 ### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
 [PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf)
@@ -57,3 +49,10 @@
 [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
 
 - A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business to return a "cover count" for a typical five hour lunch, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
+
+## Work Experience
+**Freemans Restaurant - Server Captain and Shift Manager**
+(_August 2012 - Present_)
+- Schedule reservations and manage seating arrangements simultaneously in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor.
+- Handle customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service
+- Deliver in-depth training to workers in customer-facing roles to promote strong team performance.
