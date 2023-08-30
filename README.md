@@ -16,6 +16,7 @@
 
 ## Projects
 ### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
+
 [PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf) | [R Markdown](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
 
 - EEO-1 Component Collection data is analyzed using RStudio to answer the question of whether we have seen “progress” in terms of diversity, equity, and inclusion within the museum sector from the years 2014 to 2020 at the site of the NYC Core Based Statistical Area and how this “progress” compares to any at the national level.
@@ -44,7 +45,7 @@
 
 ## Work Experience
 **Freemans Restaurant - Server Captain and Shift Manager**
-(_August 2012 - Present_)
+_August 2012 - Present_
 - Schedule reservations and manage seating arrangements simultaneously in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor.
 - Handle customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service
 - Deliver in-depth training to workers in customer-facing roles to promote strong team performance.
