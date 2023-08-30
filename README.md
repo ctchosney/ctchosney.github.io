@@ -10,6 +10,8 @@
 - A.A.S. Fashion Marketing and Communication | Parsons School of Design | _December 2007_
 - B.A. Sociology/Anthropology and Geology | Denison University | _May 2005_
 
+---
+
 ## Certificates
 - Google Data Analytics | Coursera | _August 2023_
 - Computer Science | NYU Tandon School of Engineering | _May 2022_
