@@ -8,7 +8,7 @@
 ## Education							       		
 - M.S. Quantitative Methods	| CUNY Graduate Center (_Exp December 2024_)
 - A.A.S. Fashion Marketing and Communication | Parsons School of Design (_December 2007_)
-- B.A. Sociology/Anthropology/Geology | Denison University (_May 2005_)
+- B.A. Sociology/Anthropology and Geology | Denison University (_May 2005_)
 
 ## Certificates
 - Google Data Analytics | Coursera (_August 2023_)
