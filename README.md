@@ -5,13 +5,13 @@
 
 
 ## Education							       		
-- M.S. Quantitative Methods	| CUNY Graduate Center (_Exp. December 2024_)
-- A.A.S. Fashion Marketing and Communication | Parsons School of Design (_December 2007_)
-- B.A. Sociology/Anthropology and Geology | Denison University (_May 2005_)
+- M.S. Quantitative Methods	| CUNY Graduate Center | _Exp. December 2024_
+- A.A.S. Fashion Marketing and Communication | Parsons School of Design | _December 2007_
+- B.A. Sociology/Anthropology and Geology | Denison University | _May 2005_
 
 ## Certificates
-- Google Data Analytics | Coursera (_August 2023_)
-- Computer Science | NYU Tandon School of Engineering (_May 2022_)
+- Google Data Analytics | Coursera | _August 2023_
+- Computer Science | NYU Tandon School of Engineering | _May 2022_
 
 
 ## Projects
