@@ -3,6 +3,7 @@
 ### [Resume PDF](assets/pdf/Chosney Resume.pdf) | [LinkedIn](http://www.linkedin.com/in/ctchosney)
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
 
+---
 
 ## Education							       		
 - M.S. Quantitative Methods	| CUNY Graduate Center | _Exp. December 2024_
