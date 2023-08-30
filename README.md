@@ -42,7 +42,7 @@
 
 ### "A Restaurant Queuing Model to Inform Staffing" | July 2023
 
-[Presentation PDF](assets/pdf/Chosney Final Slide Deck.pdf)
+[PDF](assets/pdf/Chosney Final Slide Deck.pdf)
 
 [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
 
