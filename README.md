@@ -2,17 +2,18 @@
 ### Email: ctchosney@gmail.com
 ### [Resume PDF](assets/pdf/Chosney Resume.pdf)
 ### [LinkedIn](http://www.linkedin.com/in/ctchosney)
-
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
 
+
 ## Education							       		
-- M.S. Quantitative Methods	| CUNY Graduate Center (_Exp December 2024_)
+- M.S. Quantitative Methods	| CUNY Graduate Center (_Exp. December 2024_)
 - A.A.S. Fashion Marketing and Communication | Parsons School of Design (_December 2007_)
 - B.A. Sociology/Anthropology and Geology | Denison University (_May 2005_)
 
 ## Certificates
 - Google Data Analytics | Coursera (_August 2023_)
 - Computer Science | NYU Tandon School of Engineering (_May 2022_)
+
 
 ## Projects
 ### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
@@ -42,6 +43,7 @@
 
 - Mapping and GIS data is used to compare sites of queer nightlife in NYC and Tokyo in terms of quantity, location, and density. Analysis of these comparisons reveal that differing historical influences and sociocultural attitudes towards homosexuality between New York City and Tokyo have resulted in different urban layouts of these city’s queer nightlife sites.
 
+
 ### "A Restaurant Queuing Model to Inform Staffing" | July 2023
 
 [Presentation PDF](assets/pdf/Chosney Final Slide Deck.pdf)
@@ -49,6 +51,7 @@
 [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
 
 - A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business to return a "cover count" for a typical five hour lunch, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
+
 
 ## Work Experience
 **Freemans Restaurant - Server Captain and Shift Manager**
