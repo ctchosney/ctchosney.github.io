@@ -21,9 +21,7 @@
 
 [R Markdown](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
 
-- Compiled, cleaned, and manipulated EEO-1 survey data in R for proper handling.
-- Developed polished visualizations to share results of data analyses.
-- Wrote, formatted, and output report using R Markdown.
+- EEO-1 Component Collection data is analyzed using RStudio to answer the question of whether we have seen “progress” in terms of diversity, equity, and inclusion within the museum sector from the years 2014 to 2020 at the site of the NYC core-based statistical area (CBSA) and how this “progress” compares to any at the national level.
 
 
 ### "Measuring Factors for Museum Sector Income Inequality, 2016-2021" | May 2023
@@ -32,9 +30,7 @@
 
 [STATA](assets/pdf/final_do_file.do)
 
-- Compiled, cleaned, and manipulated IPUMS USA ACS data in STATA for proper handling.
-- Ran statistical analyses within STATA, including linear and logistic regressions, to process datasets.
-- Tested and validated models for accuracy of predictions in outcomes of interest.
+- U.S. Census microdata is analyzed in STATA to determine which of the factors of age, sex, race, and managerial role contribute to income inequality for individuals employed in the museum and cultural institution job sector of the New York, Newark, and Jersey City Core Based Statistical Area.
 
 
 ### "Gay Bar to Gei Bā, Shots to Shōchū: Comparing NYC and Tokyo’s Queer Nightlife Sites" | May 2023
@@ -50,7 +46,7 @@
 
 [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
 
-- A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business to return a "cover count" for a typical five hour lunch, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
+- A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
 
 
 ## Work Experience
