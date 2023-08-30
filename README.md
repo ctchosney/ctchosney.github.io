@@ -1,6 +1,9 @@
 # Data Analyst
-
+## Email: ctchosney@gmail.com
+## Phone: 740-973-4331
+## Area: Brooklyn, NY 11222
 ## [Resume PDF](assets/pdf/Chosney Resume.pdf)
+## [LinkedIn](http://www.linkedin.com/in/ctchosney)
 
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
 
