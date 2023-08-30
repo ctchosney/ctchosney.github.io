@@ -42,9 +42,7 @@
 
 ### "A Restaurant Queuing Model to Inform Staffing" | July 2023
 
-[PDF](assets/pdf/Chosney Final Slide Deck.pdf)
-
-[Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
+[PDF](assets/pdf/Chosney Final Slide Deck.pdf) | [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
 
 - A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
 
