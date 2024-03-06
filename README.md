@@ -2,6 +2,7 @@
 ### Email: ctchosney@gmail.com
 ### [Resume PDF](assets/pdf/Chosney Resume 3:24.pdf) | [LinkedIn](http://www.linkedin.com/in/ctchosney)
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
+#### Visualization Fluency: Datawrapper, Flourish, R Studio/ggplot2, Tableau
 
 ---
 
@@ -47,6 +48,6 @@
 ## Work Experience
 **Freemans Restaurant - Server Captain and Shift Manager**\
 _August 2012 - Present_
-- Schedule reservations and manage seating arrangements simultaneously in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor.
-- Handle customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service
+- Optimize seating in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor, reducing wait times to under ten minutes.
+- Handle customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service, resulting in a 20% positive increase in Resy analytics customer ratings.
 - Deliver in-depth training to workers in customer-facing roles to promote strong team performance.
