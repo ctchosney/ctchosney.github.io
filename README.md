@@ -2,7 +2,7 @@
 ### Email: ctchosney@gmail.com
 ### [Resume PDF](assets/pdf/Chosney Resume 3:24.pdf) | [LinkedIn](http://www.linkedin.com/in/ctchosney)
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
-#### Visualization Fluency: Datawrapper, Flourish, R Studio/ggplot2, Tableau
+#### Visualization: Datawrapper, Flourish, RStudio/ggplot2, Tableau
 
 ---
 
