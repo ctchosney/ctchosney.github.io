@@ -47,7 +47,8 @@
 [PDF](assets/pdf/CHOSNEY - Big Data Privacy Preservation FINAL.pdf)
 
 - Data privacy preservation methods are surveyed to introduce big data and privacy, delineate
-types of data privacy attacks and threats, establish the classic methods of data perturbation and anonymization, conceptualize the metrics used to evaluate these methods, and discuss future directions for the research of privacy preservation and its methods. 
+types of data privacy attacks and threats, establish the classic methods of data perturbation and anonymization, conceptualize the metrics used to evaluate these methods, and discuss future directions for the research of privacy preservation and its methods.
+
 ---
 
 ## Work Experience
