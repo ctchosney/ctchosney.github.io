@@ -43,6 +43,16 @@
 
 - A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
 
+### "Big Data Privacy Preservation - A Survey" | December 2023
+[PDF](assets/pdf/Chosney Final Slide Deck.pdf)
+
+- Through this survey of data privacy preservation methods
+we have been introduced to big data and privacy, delineated
+types of data privacy attacks and threats, established the classic
+methods of data perturbation and anonymization,
+conceptualized the metrics used to evaluate these methods, and
+discussed future directions for the research of privacy
+preservation and its methods.
 ---
 
 ## Work Experience
