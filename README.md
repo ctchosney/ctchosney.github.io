@@ -58,7 +58,7 @@ types of data privacy attacks and threats, establish the classic methods of data
 Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)
 
 ### [ccc]
-(<div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div>)
+![Flourish 1](<div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div>)
 
 ### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png)
 ![V1](assets/img/cell_plot.png)
