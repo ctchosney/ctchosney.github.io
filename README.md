@@ -54,7 +54,7 @@ types of data privacy attacks and threats, establish the classic methods of data
 ## Visualizations
 
 ### ["Who's In School?"](assets/img/DV HW4_FINAL.png) 
-### - Canva/Python
+- Canva/Python
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)
 
