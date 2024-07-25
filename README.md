@@ -53,12 +53,12 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ## Visualizations
 
-### ["Who's In School?"](assets/img/DV HW4_FINAL.png)
+### ["Who's In School?"](assets/img/DV HW4_FINAL.png) Canva/Python Matplotlib
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)
 
 ### [ccc]
-![Flourish 1](<div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div>)
+<div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 ### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png)
 ![V1](assets/img/cell_plot.png)
