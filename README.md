@@ -53,14 +53,14 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ## Visualizations
 
-###["Who's In School?"](assets/img/DV HW4_FINAL.png)
+### ["Who's In School?"](assets/img/DV HW4_FINAL.png)
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 
-###["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png)
+### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png)
 ![V1](assets/img/cell_plot.png)
 Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)
 
-###["World Mobile Cellular Subscriptions Faceted by Region"](assets/img/cell_plot_facet.png)
+### ["World Mobile Cellular Subscriptions Faceted by Region"](assets/img/cell_plot_facet.png)
 ![V2](assets/img/cell_plot_facet.png)
 Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)
 
