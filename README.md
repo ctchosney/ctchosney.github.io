@@ -2,7 +2,7 @@
 ### Email: ctchosney@gmail.com
 ### [Resume PDF](assets/pdf/Chosney Resume 3:24.pdf) | [LinkedIn](http://www.linkedin.com/in/ctchosney)
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
-#### Visualization: Datawrapper, Flourish, RStudio/ggplot2, Tableau
+#### Visualization: Flourish, Python/matplotlib, RStudio/ggplot2, Tableau
 
 ---
 
@@ -53,7 +53,7 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ## Visualizations
 
-### ["Who's In School?"](assets/img/DV HW4_FINAL.png) Canva/Python Matplotlib
+### ["Who's In School?"](assets/img/DV HW4_FINAL.png) Canva/Python
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)<br>
 
