@@ -74,10 +74,10 @@ Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhma
 ![V4](assets/img/chosney_dviz_2_2_FINAL.png)
 Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)
 
-### "Visualizing the Western Orchestra - Light"(assets/img/dviz_hw3_revise.png) RAWGraphs
+### ["Visualizing the Western Orchestra - Light"](assets/img/dviz_hw3_revise.png) RAWGraphs
 ![orchestra_light](assets/img/dviz_hw3_revise.png)
 
-### "Visualizing the Western Orchestra - Dark"(assets/img/Chosney_DVHW_3_dark.png) RAWGraphs
+### ["Visualizing the Western Orchestra - Dark"](assets/img/Chosney_DVHW_3_dark.png) RAWGraphs
 ![orchestra_dark](assets/img/Chosney_DVHW_3_dark.png)
 
 ### ["Cellphones in the Former Yugoslavia"](["https://public.flourish.studio/visualisation/16766372/") Flourish
