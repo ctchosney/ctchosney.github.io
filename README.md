@@ -53,7 +53,7 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ## Visualizations
 
-
+(assets/img/DV HW4_FINAL.png)
 
 ---
 
