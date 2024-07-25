@@ -53,28 +53,31 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ## Visualizations
 
-### ["Who's In School?"](assets/img/DV HW4_FINAL.png) *Canva/Python Matplotlib*
+### ["Who's In School?"](assets/img/DV HW4_FINAL.png) Canva/Python Matplotlib
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
-Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)
+Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)<br>
 
-### ["Cellphones in the Former Yugoslavia"]("https://public.flourish.studio/resources/embed.js") *Flourish*
-<div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+### ["Cellphones in the Former Yugoslavia"]("https://public.flourish.studio/resources/embed.js") Flourish
+<div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
 
-### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png)
+### ["Internet Use by World Region"]("https://public.flourish.studio/resources/embed.js") Flourish
+<div class="flourish-embed flourish-chart" data-src="visualisation/16766709"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
+
+### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png) R Studio
 ![V1](assets/img/cell_plot.png)
-Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)
+Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)<br>
 
-### ["World Mobile Cellular Subscriptions Faceted by Region"](assets/img/cell_plot_facet.png)
+### ["World Mobile Cellular Subscriptions Faceted by Region"](assets/img/cell_plot_facet.png) R Studio
 ![V2](assets/img/cell_plot_facet.png)
-Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)
+Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)<br>
 
-### ["International Students and QS Rank:  Does English Matter?"](assets/img/chosney_dviz_2_1_FINAL.png)
+### ["International Students and QS Rank:  Does English Matter?"](assets/img/chosney_dviz_2_1_FINAL.png) R Studio
 ![V3](assets/img/chosney_dviz_2_1_FINAL.png)
-Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)
+Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)<br>
 
-### ["Impact of Faculty Ratio and Research on QS Rank"](assets/img/chosney_dviz_2_2_FINAL.png)
+### ["Impact of Faculty Ratio and Research on QS Rank"](assets/img/chosney_dviz_2_2_FINAL.png) R Studio
 ![V4](assets/img/chosney_dviz_2_2_FINAL.png)
-Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)
+Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)<br>
 
 ---
 
