@@ -80,10 +80,10 @@ Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhma
 ### "Visualizing the Western Orchestra - Dark"(assets/img/Chosney_DVHW_3_dark.png) RAWGraphs
 ![orchestra_dark](assets/img/Chosney_DVHW_3_dark.png)
 
-### ["Cellphones in the Former Yugoslavia"]("https://public.flourish.studio/resources/embed.js") Flourish
+### ["Cellphones in the Former Yugoslavia"](["https://public.flourish.studio/visualisation/16766372/") Flourish
 <div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
 
-### ["Internet Use by World Region"]("https://public.flourish.studio/resources/embed.js") Flourish
+### ["Internet Use by World Region"]("https://public.flourish.studio/visualisation/16766709/") Flourish
 <div class="flourish-embed flourish-chart" data-src="visualisation/16766709"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
 
 ---
