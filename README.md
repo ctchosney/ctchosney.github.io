@@ -55,6 +55,7 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ### ["Who's In School?"](assets/img/DV HW4_FINAL.png)
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
+Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)
 
 ### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png)
 ![V1](assets/img/cell_plot.png)
@@ -64,13 +65,14 @@ Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)
 ![V2](assets/img/cell_plot_facet.png)
 Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)
 
-### ["International Students and QS Rank:  Does English Matter?](assets/img/chosney_dviz_2_1_FINAL.png)
+### ["International Students and QS Rank:  Does English Matter?"](assets/img/chosney_dviz_2_1_FINAL.png)
 ![V3](assets/img/chosney_dviz_2_1_FINAL.png)
 Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)
 
 ### ["Impact of Faculty Ratio and Research on QS Rank"](assets/img/chosney_dviz_2_2_FINAL.png)
 ![V4](assets/img/chosney_dviz_2_2_FINAL.png)
 Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)
+
 ---
 
 ## Work Experience
