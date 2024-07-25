@@ -59,7 +59,7 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ![V2](assets/img/V2.png)
 
-![V3](assets/img/V3L.png)
+![V3](assets/img/V3.png)
 
 ![V4](assets/img/V4.png)
 
