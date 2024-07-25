@@ -53,6 +53,7 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ## Visualizations
 
+["Who's In School?"](assets/img/DV HW4_FINAL.png)
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 
 ![V1](assets/img/V1.png)
