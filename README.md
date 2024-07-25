@@ -55,6 +55,14 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 
+![V1](assets/img/V1.png)
+
+![V2](assets/img/V2.png)
+
+![V3](assets/img/V3L.png)
+
+![V4](assets/img/V4.png)
+
 ---
 
 ## Work Experience
