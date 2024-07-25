@@ -53,45 +53,40 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ## Visualizations
 
-### ["Who's In School?"](assets/img/DV HW4_FINAL.png) 
 ### &#9679; Canva/Python
+### ["Who's In School?"](assets/img/DV HW4_FINAL.png) 
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)
 
-### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png) 
 ### &#9679; R Studio
+### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png) 
 ![V1](assets/img/cell_plot.png)
 Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)
 
 ### ["World Mobile Cellular Subscriptions Faceted by Region"](assets/img/cell_plot_facet.png) 
-### &#9679; R Studio
 ![V2](assets/img/cell_plot_facet.png)
 Source: [The World Bank](https://data.worldbank.org/indicator/IT.CEL.SETS.P2)
 
 ### ["International Students and QS Rank:  Does English Matter?"](assets/img/chosney_dviz_2_1_FINAL.png) 
-### &#9679;R Studio
 ![V3](assets/img/chosney_dviz_2_1_FINAL.png)
 Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)
 
 ### ["Impact of Faculty Ratio and Research on QS Rank"](assets/img/chosney_dviz_2_2_FINAL.png) 
-### &#9679; R Studio
 ![V4](assets/img/chosney_dviz_2_2_FINAL.png)
 Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)
 
-### ["Visualizing the Western Orchestra - Light"](assets/img/dviz_hw3_revise.png) 
 ### &#9679; RAWGraphs
+### ["Visualizing the Western Orchestra - Light"](assets/img/dviz_hw3_revise.png) 
 ![orchestra_light](assets/img/dviz_hw3_revise.png)
 
 ### ["Visualizing the Western Orchestra - Dark"](assets/img/Chosney_DVHW_3_dark.png) 
-### &#9679; RAWGraphs
 ![orchestra_dark](assets/img/Chosney_DVHW_3_dark.png)
 
-### ["Cellphones in the Former Yugoslavia"](["https://public.flourish.studio/visualisation/16766372/") 
 ### &#9679; Flourish
+### ["Cellphones in the Former Yugoslavia"](["https://public.flourish.studio/visualisation/16766372/") 
 <div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
 
 ### ["Internet Use by World Region"]("https://public.flourish.studio/visualisation/16766709/") 
-### &#9679; Flourish
 <div class="flourish-embed flourish-chart" data-src="visualisation/16766709"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
 
 ---
