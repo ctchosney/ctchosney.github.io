@@ -53,15 +53,10 @@ types of data privacy attacks and threats, establish the classic methods of data
 
 ## Visualizations
 
-### ["Who's In School?"](assets/img/DV HW4_FINAL.png) Canva/Python
+### ["Who's In School?"](assets/img/DV HW4_FINAL.png) 
+### Canva/Python
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 Source: [Our World In Data](https://ourworldindata.org/grapher/primary-enrollment-selected-countries)
-
-### ["Cellphones in the Former Yugoslavia"]("https://public.flourish.studio/resources/embed.js") Flourish
-<div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
-
-### ["Internet Use by World Region"]("https://public.flourish.studio/resources/embed.js") Flourish
-<div class="flourish-embed flourish-chart" data-src="visualisation/16766709"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
 
 ### ["World Mobile Cellular Subscriptions by Region"](assets/img/cell_plot.png) R Studio
 ![V1](assets/img/cell_plot.png)
@@ -79,10 +74,17 @@ Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhma
 ![V4](assets/img/chosney_dviz_2_2_FINAL.png)
 Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhmam/qs-world-university-rankings-2017-2022)
 
-### "Visualizing the Western Orchestra" RAWGraphs
+### "Visualizing the Western Orchestra - Light"((assets/img/dviz_hw3_revise.png) RAWGraphs
 ![orchestra_light](assets/img/dviz_hw3_revise.png)
 
-![orchestra_dark](assests/img/Chosney_DVHW_3_dark.png)
+### "Visualizing the Western Orchestra - Dark"((assets/img/Chosney_DVHW_3_dark.png) RAWGraphs
+![orchestra_dark](assets/img/Chosney_DVHW_3_dark.png)
+
+### ["Cellphones in the Former Yugoslavia"]("https://public.flourish.studio/resources/embed.js") Flourish
+<div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
+
+### ["Internet Use by World Region"]("https://public.flourish.studio/resources/embed.js") Flourish
+<div class="flourish-embed flourish-chart" data-src="visualisation/16766709"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
 
 ---
 
