@@ -56,8 +56,10 @@ types of data privacy attacks and threats, establish the classic methods of data
 ["Who's In School?"](assets/img/DV HW4_FINAL.png)
 ![Who's In School?](assets/img/DV HW4_FINAL.png)
 
+["World Mobile Cellular Subscriptions"](assets/img/V1.png)
 ![V1](assets/img/V1.png)
 
+["World Mobile Cellular Subscriptions: By Region"](assets/img/V1.png)
 ![V2](assets/img/V2.png)
 
 ![V3](assets/img/V3.png)
