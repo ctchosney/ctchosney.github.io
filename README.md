@@ -83,7 +83,7 @@ Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhma
 ![orchestra_dark](assets/img/Chosney_DVHW_3_dark.png)
 
 ### &#9679; Flourish
-### ["Cellphones in the Former Yugoslavia"](["https://public.flourish.studio/visualisation/16766372/") 
+### ["Cellphones in the Former Yugoslavia"]("https://public.flourish.studio/visualisation/16766372/") 
 <div class="flourish-embed flourish-chart" data-src="visualisation/16766372"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
 
 ### ["Internet Use by World Region"]("https://public.flourish.studio/visualisation/16766709/") 
