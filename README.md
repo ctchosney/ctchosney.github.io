@@ -93,13 +93,13 @@ Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhma
 ## Work Experience
 
 **Freelance - Data Analytics Consultant **\
-_09/2022 - Present_
+_September 2022 - Present_
 - Partnered with non-profit HR clients to assist in EEO reporting, HRIS analytics, and leveraging ADP Workforce Now for efficient data management and compliance.
 - Conducted comprehensive data analysis to identify trends and insights, developed customized dashboards and reports, contributing to strategic decision-making and improved operations.
 - Created and implemented data-driven instructional strategies for tutoring service Mathchops, resulting in a 25% improvement in student performance metrics.
 
 **Freemans Restaurant - Server Captain and Shift Manager**\
 _August 2012 - Present_
-- Optimizec seating in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor, reducing wait times to under ten minutes.
+- Optimized seating in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor, reducing wait times to under ten minutes.
 - Handled customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service, resulting in a 20% positive increase in Resy analytics customer ratings.
 - Delivered in-depth training to workers in customer-facing roles to promote strong team performance.
