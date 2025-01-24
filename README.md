@@ -8,7 +8,7 @@
 
 ## Education		
 
-- M.S. Quantitative Methods	| CUNY Graduate Center | _December 2024_
+&#9679; M.S. Quantitative Methods	| CUNY Graduate Center | _December 2024_
 - A.A.S. Fashion Marketing and Communication | Parsons School of Design | _December 2007_
 - B.A. Sociology/Anthropology and Geology | Denison University | _May 2005_
 
