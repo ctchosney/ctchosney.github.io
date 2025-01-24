@@ -54,6 +54,8 @@
 [PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf) | [R Markdown](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
 
 - EEO-1 Component Collection data is analyzed using RStudio to answer the question of whether we have seen “progress” in terms of diversity, equity, and inclusion within the museum sector from the years 2014 to 2020 at the site of the NYC Core Based Statistical Area and how this “progress” compares to any at the national level.
+  
+
 ---
 
 ## Visualizations
