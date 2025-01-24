@@ -7,7 +7,7 @@
 ---
 
 ## Education							       		
-- M.S. Quantitative Methods	| CUNY Graduate Center | _Coursework Complete May 2024_
+- M.S. Quantitative Methods	| CUNY Graduate Center | _December 2024_
 - A.A.S. Fashion Marketing and Communication | Parsons School of Design | _December 2007_
 - B.A. Sociology/Anthropology and Geology | Denison University | _May 2005_
 
@@ -21,17 +21,23 @@
 ---
 
 ## Projects
-### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
-[PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf) | [R Markdown](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
-
-- EEO-1 Component Collection data is analyzed using RStudio to answer the question of whether we have seen “progress” in terms of diversity, equity, and inclusion within the museum sector from the years 2014 to 2020 at the site of the NYC Core Based Statistical Area and how this “progress” compares to any at the national level.
 
 
-### "Measuring Factors for Museum Sector Income Inequality, 2016-2021" | May 2023
-[PDF](assets/pdf/CHOSNEY - stats 2 final.pdf) | [STATA](assets/pdf/final_do_file.do)
+### "Driving Towards Wage Equity With Machine Learning: Predicting Annual Wages by Job Title" | December 2024
+[PDF](assets/pdf/CHOSNEY CAPSTONE - FINAL.pdf)
 
-- U.S. Census microdata is analyzed in STATA to determine which of the factors of age, sex, race, and managerial role contribute to income inequality for individuals employed in the museum and cultural institution job sector of the New York, Newark, and Jersey City Core Based Statistical Area.
+- Master's capstone project explores the diﬀerences in annual compensation between the internal data of a mid-size NYC cultural institution and national external market job valuation data to construct a machine learning model that models future compensation per job title for the mid-size cultural institution accounting for inflation, market rate wage changes, and tenure.
 
+
+### "Big Data Privacy Preservation - A Survey" | December 2023
+[PDF](assets/pdf/CHOSNEY - Big Data Privacy Preservation FINAL.pdf)
+
+- Data privacy preservation methods are surveyed to introduce big data and privacy, delineate types of data privacy attacks and threats, establish the classic methods of data perturbation and anonymization, conceptualize the metrics used to evaluate these methods, and discuss future directions for the research of privacy preservation and its methods.
+
+### "A Restaurant Queuing Model to Inform Staffing" | July 2023
+[PDF](assets/pdf/Chosney Final Slide Deck.pdf) | [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
+
+- A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
 
 ### "Gay Bar to Gei Bā, Shots to Shōchū: Comparing NYC and Tokyo’s Queer Nightlife Sites" | May 2023
 [PDF](assets/pdf/CHOSNEY - GEY BAR TO GEI BA FINAL PAPER.pdf)
@@ -39,17 +45,15 @@
 - Mapping and GIS data is used to compare sites of queer nightlife in NYC and Tokyo in terms of quantity, location, and density. Analysis of these comparisons reveal that differing historical influences and sociocultural attitudes towards homosexuality between New York City and Tokyo have resulted in different urban layouts of these city’s queer nightlife sites.
 
 
-### "A Restaurant Queuing Model to Inform Staffing" | July 2023
-[PDF](assets/pdf/Chosney Final Slide Deck.pdf) | [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
+### "Measuring Factors for Museum Sector Income Inequality, 2016-2021" | May 2023
+[PDF](assets/pdf/CHOSNEY - stats 2 final.pdf) | [STATA](assets/pdf/final_do_file.do)
 
-- A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
+- U.S. Census microdata is analyzed in STATA to determine which of the factors of age, sex, race, and managerial role contribute to income inequality for individuals employed in the museum and cultural institution job sector of the New York, Newark, and Jersey City Core Based Statistical Area.
 
-### "Big Data Privacy Preservation - A Survey" | December 2023
-[PDF](assets/pdf/CHOSNEY - Big Data Privacy Preservation FINAL.pdf)
+### "Minority Representation in Museum Sector Employment, 2014-2020" | December 2022
+[PDF](/assets/pdf/CHOSNEY---FINAL-PROJECT.pdf) | [R Markdown](/assets/pdf/CHOSNEY - FINAL PROJECT.Rmd)
 
-- Data privacy preservation methods are surveyed to introduce big data and privacy, delineate
-types of data privacy attacks and threats, establish the classic methods of data perturbation and anonymization, conceptualize the metrics used to evaluate these methods, and discuss future directions for the research of privacy preservation and its methods.
-
+- EEO-1 Component Collection data is analyzed using RStudio to answer the question of whether we have seen “progress” in terms of diversity, equity, and inclusion within the museum sector from the years 2014 to 2020 at the site of the NYC Core Based Statistical Area and how this “progress” compares to any at the national level.
 ---
 
 ## Visualizations
@@ -99,7 +103,7 @@ _September 2022 - Present_
 - Created and implemented data-driven instructional strategies for tutoring service Mathchops, resulting in a 25% improvement in student performance metrics.
 
 **Freemans Restaurant - Server Captain and Shift Manager**\
-_August 2012 - Present_
+_August 2012 - December 2024_
 - Optimized seating in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor, reducing wait times to under ten minutes.
 - Handled customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service, resulting in a 20% positive increase in Resy analytics customer ratings.
 - Delivered in-depth training to workers in customer-facing roles to promote strong team performance.
