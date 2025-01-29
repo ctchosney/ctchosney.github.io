@@ -1,4 +1,4 @@
-# Data Analyst
+# Analytics Professional
 ### Email: ctchosney@gmail.com
 ### [Resume PDF](assets/pdf/Chosney Resume.pdf) | [LinkedIn](http://www.linkedin.com/in/ctchosney)
 #### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
