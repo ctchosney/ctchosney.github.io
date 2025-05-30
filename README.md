@@ -40,6 +40,11 @@
 
 - Data privacy preservation methods are surveyed to introduce big data and privacy, delineate types of data privacy attacks and threats, establish the classic methods of data perturbation and anonymization, conceptualize the metrics used to evaluate these methods, and discuss future directions for the research of privacy preservation and its methods.
 
+### "The CURE Algorithm for Clustering - | December 2023
+[PDF](assets/pdf/CHOSNEY - Big Data Privacy Preservation FINAL.pdf)
+
+- The CURE clustering algorithm is explored and implemented to overcome the limitations of K-Means by addressing sensitivity to outliers, supporting the detection of non-spherical clusters, reducing reliance on centroids, utilizing representative points for robustness, enabling scalability through random sampling and partitioning, and demonstrating improved performance on datasets with varying cluster shapes and densities.
+
 ### "A Restaurant Queuing Model to Inform Staffing" | July 2023
 [PDF](assets/pdf/Chosney Final Slide Deck.pdf) | [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
 
