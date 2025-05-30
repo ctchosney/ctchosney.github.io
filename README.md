@@ -50,6 +50,8 @@
 ### "Gay Bar to Gei Bā, Shots to Shōchū: Comparing NYC and Tokyo’s Queer Nightlife Sites" | May 2023
 [PDF](assets/pdf/CHOSNEY - GEY BAR TO GEI BA FINAL PAPER.pdf)
 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSIMfEQ8GYSiOnwXG5Pv3u5R_aZ3zMXCb2mDDiIJNwjxETEALPFR82iBsvTXxULUfz1zx0Q7TXttR9G/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br/>
+
 - Mapping and GIS data is used to compare sites of queer nightlife in NYC and Tokyo in terms of quantity, location, and density. Analysis of these comparisons reveal that differing historical influences and sociocultural attitudes towards homosexuality between New York City and Tokyo have resulted in different urban layouts of these city’s queer nightlife sites.
 
 
