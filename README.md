@@ -1,15 +1,16 @@
 # Analytics Professional
 ### Email: ctchosney@gmail.com
 ### [Resume PDF](assets/pdf/Chosney, Craig - Resume.pdf) | [LinkedIn](http://www.linkedin.com/in/ctchosney)
-#### Technical Skills: C++, Python, R, R Markdown, SQL, STATA
-#### Visualization: Flourish, Python/matplotlib, RStudio/ggplot2, Tableau
+#### Data Visualization: Tableau, PowerBI, R Studio (ggplot2), Matplotlib
+#### Programming: Python, SQL, R, STATA, C++
+#### Modeling: Linear Regression, Logistic Regression, Machine Learning
 
 ---
 
-## Education		
+## Academic Degrees		
 
 &#9679; M.S. Quantitative Methods	| CUNY Graduate Center | _December 2024_
-&#9679; A.A.S. Fashion Marketing and Communication | Parsons School of Design | _December 2007_
+&#9679; A.A.S. Marketing and Communication | Parsons School of Design | _December 2007_
 &#9679; B.A. Sociology/Anthropology and Geology | Denison University | _May 2005_
 
 ---
@@ -18,7 +19,7 @@
 
 &#9679; Advanced Certificate in Data Science | CUNY Graduate Center | _May 2024_
 &#9679; Google Data Analytics | Coursera | _August 2023_
-&#9679; Computer Science | NYU Tandon School of Engineering | _May 2022_
+&#9679; Bachelor's Certificate in Computer Science | NYU Tandon School of Engineering | _May 2022_
 
 ---
 
@@ -100,14 +101,17 @@ Source: [QS World University Rankings 2017–2022](https://www.kaggle.com/padhma
 
 ## Work Experience
 
-**Freelance - Data Analytics Consultant **\
-_September 2022 - Present_
-- Partnered with non-profit HR clients to assist in EEO reporting, HRIS analytics, and leveraging ADP Workforce Now for efficient data management and compliance.
-- Conducted comprehensive data analysis to identify trends and insights, developed customized dashboards and reports, contributing to strategic decision-making and improved operations.
-- Created and implemented data-driven instructional strategies for tutoring service Mathchops, resulting in a 25% improvement in student performance metrics.
+**Data Analytics Consultant - Mathchops**\
+_January 2025 - Current_
+- Designed and optimized SQL queries to analyze student performance trends, providing insights for targeted tutoring strategies and achieving a 25% increase in student proficiency.
+- Developed SQL-driven dashboards to track user progression, identifying that 35% of standard signups converted into high-value tutors, informing data-driven growth strategies.
 
-**Freemans Restaurant - Server Captain and Shift Manager**\
+**Data Analytics Consultant  - Confidential Cultural Institutions**\
+_September 2022 - December 2024_
+- Collaborated with HR leaders to streamline EEO reporting and HRIS analytics, improving data accuracy and compliance.
+- Conducted predictive analytics using Python and R to identify compensation trends, leading to actionable insights for strategic planning.
+
+**Manager and Team Lead - Freemans / Alley Management - **\
 _August 2012 - December 2024_
-- Optimized seating in high-volume 150-seat NYC restaurant while maintaining calm, professional demeanor, reducing wait times to under ten minutes.
-- Handled customer complaints professionally, resolving issues through diplomatic acknowledgment and commitment to service, resulting in a 20% positive increase in Resy analytics customer ratings.
-- Delivered in-depth training to workers in customer-facing roles to promote strong team performance.
+- Increased customer satisfaction ratings by 20% through eﬀective complaint resolution and team training programs.
+- Managed daily operations, including staﬀ scheduling, inventory, and customer service.
