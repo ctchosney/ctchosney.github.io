@@ -113,7 +113,7 @@ _January 2025 - Current_
 - Designed and optimized SQL queries to analyze student performance trends, providing insights for targeted tutoring strategies and achieving a 25% increase in student proficiency.
 - Developed SQL-driven dashboards to track user progression, identifying that 35% of standard signups converted into high-value tutors, informing data-driven growth strategies.
 
-**Data Analytics Consultant  - Confidential Cultural Institutions**\
+**Data Analyst - Confidential Cultural Institutions**\
 _September 2022 - December 2024_
 - Collaborated with HR leaders to streamline EEO reporting and HRIS analytics, improving data accuracy and compliance.
 - Conducted predictive analytics using Python and R to identify compensation trends, leading to actionable insights for strategic planning.
