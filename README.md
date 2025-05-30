@@ -38,6 +38,8 @@
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSJ44h-fiXkqD2bfxXySdv_fggiOKybrti1hA6aUzb4CHUIyCrhA_-3JBJXuZTIHCN0ZSQdKYTPOhuR/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br/>
 
+- Two models are developed to predict next-day S&P 500 movements using lagged price data, time series feature engineering, and various classifiers including logistic regression, random forest, support vector machines, and neural networks; model performance is evaluated using AUC and accuracy metrics, with the strongest result—a linear SVM achieving AUC ≈ 0.72—suggesting modest predictive power and highlighting the challenges of modeling short-term market trends from historical pricing data.
+
 ### "Big Data Privacy Preservation - A Survey" | December 2023
 [PDF](assets/pdf/CHOSNEY - Big Data Privacy Preservation FINAL.pdf)
 
