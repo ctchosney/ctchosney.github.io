@@ -1,5 +1,5 @@
 # Analytics Professional
-### Email: ctchosney@gmail.com
+### Email: ct.chosney@gmail.com
 ### [Resume PDF](assets/pdf/Chosney, Craig - Resume.pdf) | [LinkedIn](http://www.linkedin.com/in/ctchosney)
 #### Data Visualization: Tableau, PowerBI, R Studio (ggplot2), Matplotlib
 #### Programming: Python, SQL, R, STATA, C++
@@ -9,7 +9,7 @@
 
 ## Academic Degrees		
 
-&#9679; M.S. Quantitative Methods	| CUNY Graduate Center | _December 2024_
+&#9679; M.S. Quantitative Methods and Computer Science	| CUNY Graduate Center | _December 2024_
 &#9679; A.A.S. Marketing and Communication | Parsons School of Design | _December 2007_
 &#9679; B.A. Sociology/Anthropology and Geology | Denison University | _May 2005_
 
