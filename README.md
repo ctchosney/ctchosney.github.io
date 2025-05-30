@@ -43,14 +43,14 @@
 ### "A Restaurant Queuing Model to Inform Staffing" | July 2023
 [PDF](assets/pdf/Chosney Final Slide Deck.pdf) | [Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQVjd-6HXkSHk3PAk4jAFv0Xgc6Y9jZXSXo0ra73Yh07TCmfznZIfSSpFRWyQ0MhJId8DgDCAQS4oqb/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br/>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQVjd-6HXkSHk3PAk4jAFv0Xgc6Y9jZXSXo0ra73Yh07TCmfznZIfSSpFRWyQ0MhJId8DgDCAQS4oqb/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br/>
 
 - A Python simulation models customer flow at a restaurant in order to inform appropriate staffing decisions. I have adapted code for simulating customer flow in a business, and have used my decade of hospitality experience to inform the model's logisitics and probabilities. Having a stochastic model for simulating cover counts and customer flow allows us to optimize staffing for both employee and employer gain.
 
 ### "Gay Bar to Gei Bā, Shots to Shōchū: Comparing NYC and Tokyo’s Queer Nightlife Sites" | May 2023
 [PDF](assets/pdf/CHOSNEY - GEY BAR TO GEI BA FINAL PAPER.pdf)
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSIMfEQ8GYSiOnwXG5Pv3u5R_aZ3zMXCb2mDDiIJNwjxETEALPFR82iBsvTXxULUfz1zx0Q7TXttR9G/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br/>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSIMfEQ8GYSiOnwXG5Pv3u5R_aZ3zMXCb2mDDiIJNwjxETEALPFR82iBsvTXxULUfz1zx0Q7TXttR9G/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br/>
 
 - Mapping and GIS data is used to compare sites of queer nightlife in NYC and Tokyo in terms of quantity, location, and density. Analysis of these comparisons reveal that differing historical influences and sociocultural attitudes towards homosexuality between New York City and Tokyo have resulted in different urban layouts of these city’s queer nightlife sites.
 
