@@ -30,6 +30,7 @@
 [PDF](assets/pdf/CHOSNEY CAPSTONE - FINAL.pdf)
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS13Tc0EB1HoKlGICuIeL5mAH93_WYey1Jgsw99aH9Ywhh875dbPpeytL9_JEmwbtVwLCFX2m9vrn7U/pubembed?start=false&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<br/>
 
 - Master's capstone project explores the diﬀerences in annual compensation between the internal data of a mid-size NYC cultural institution and national external market job valuation data to construct a machine learning model that models future compensation per job title for the mid-size cultural institution accounting for inflation, market rate wage changes, and tenure.
 
