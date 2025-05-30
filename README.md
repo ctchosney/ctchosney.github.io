@@ -36,6 +36,8 @@
 ### "Big Data Privacy Preservation - A Survey" | December 2023
 [PDF](assets/pdf/CHOSNEY - Big Data Privacy Preservation FINAL.pdf)
 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQxbJD4kFtnIrc6RydAvhVqRqgVDE7260zFdG4vQdL7onl8mw5BzMAvbNNOmY6svP4p6aM9zWfhQmWs/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br/>
+
 - Data privacy preservation methods are surveyed to introduce big data and privacy, delineate types of data privacy attacks and threats, establish the classic methods of data perturbation and anonymization, conceptualize the metrics used to evaluate these methods, and discuss future directions for the research of privacy preservation and its methods.
 
 ### "A Restaurant Queuing Model to Inform Staffing" | July 2023
