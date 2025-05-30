@@ -34,7 +34,7 @@
 - Master's capstone project explores the diﬀerences in annual compensation between the internal data of a mid-size NYC cultural institution and national external market job valuation data to construct a machine learning model that models future compensation per job title for the mid-size cultural institution accounting for inflation, market rate wage changes, and tenure.
 
 ### "Predicting the S&P: Exploring ML Techniques for Financial Analytics" | May 2024
-[Jupyter Notebook](assets/pdf/Final Project - Chosney.ipynb)
+[Jupyter Notebook](assets/pdf/chosney_craig_ML_S24_CSc740_Project.ipynb)
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSJ44h-fiXkqD2bfxXySdv_fggiOKybrti1hA6aUzb4CHUIyCrhA_-3JBJXuZTIHCN0ZSQdKYTPOhuR/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br/>
 
