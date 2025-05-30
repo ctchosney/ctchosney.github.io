@@ -111,7 +111,8 @@ _September 2022 - December 2024_
 - Collaborated with HR leaders to streamline EEO reporting and HRIS analytics, improving data accuracy and compliance.
 - Conducted predictive analytics using Python and R to identify compensation trends, leading to actionable insights for strategic planning.
 
-**Manager and Team Lead - Freemans / Alley Management - **\
+**Business Operations Analyst & Team Lead - Freemans / Alley Management**\
 _August 2012 - December 2024_
-- Increased customer satisfaction ratings by 20% through eﬀective complaint resolution and team training programs.
-- Managed daily operations, including staﬀ scheduling, inventory, and customer service.
+- Analyzed sales, labor, and customer flow data to identify operational ineﬃciencies and inform decisions that improved cost control and staﬃng alignment.
+- Managed and coached a 10+ person team, applying data-driven insights to optimize workflows,
+improve service consistency, and meet performance targets.
