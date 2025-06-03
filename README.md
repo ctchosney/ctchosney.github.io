@@ -130,4 +130,4 @@ _September 2022 - December 2024_
 _August 2012 - December 2024_
 
 **Brand Analyst - Macy's, Inc.**\
-_January 2007 - December 2009_
+_January 2008 - December 2009_
